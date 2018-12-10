@@ -42,3 +42,20 @@ lrwxrwxrwx. 1 root root 41 Dec 10 11:39 /etc/alternatives/java -> /usr/java/jdk1
 ```
 
 実態は/usr/java/jdk1.8.0_192-amd64/jre/bin/javaに作成される
+
+補足
+
+他のユーザーでも使えるようにするには追加したいユーザーにスイッチして　~/.bashrc に下記を追加
+
+```
+$ export JAVA_HOME=/usr/java/jdk1.8.0_192-amd64
+$ export PATH=$PATH:$JAVA_HOME/jre/bin
+```
+
+変更を反映する
+
+```
+source ~/.bashrc
+```
+
+これでいけるはず。
