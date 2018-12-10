@@ -1,7 +1,7 @@
-AWS RedHat7.6(HVM)にOracle JDK8 入れてみた
+# AWS RedHat7.6(HVM)にOracle JDK8 入れてみた
 
-EC2 RedHat7.6
-T2.micro
+EC2 RedHat7.6  
+T2.micro  
 
 セキュリティグループとか何も設定してない
 
@@ -43,7 +43,8 @@ lrwxrwxrwx. 1 root root 41 Dec 10 11:39 /etc/alternatives/java -> /usr/java/jdk1
 
 実態は/usr/java/jdk1.8.0_192-amd64/jre/bin/javaに作成される
 
-補足
+
+## 【補足】
 
 他のユーザーでも使えるようにするには追加したいユーザーにスイッチして　~/.bashrc に下記を追加
 
