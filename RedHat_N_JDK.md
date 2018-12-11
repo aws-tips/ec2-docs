@@ -30,6 +30,9 @@ java version "1.8.0_192"
 Java(TM) SE Runtime Environment (build 1.8.0_192-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.192-b12, mixed mode)
 
+$javac -version
+javac 1.8.0_192
+
 # 実態がどこにあるのかを確認
 $ which java
 /usr/bin/java
@@ -59,4 +62,15 @@ $ export PATH=$PATH:$JAVA_HOME/jre/bin
 source ~/.bashrc
 ```
 
-これでいけるはず。
+全ユーザーに設定したい場合は /etc/profile に追記
+
+```
+$ export JAVA_HOME=/usr/java/jdk1.8.0_192-amd64
+$ export PATH=$PATH:$JAVA_HOME/jre/bin
+```
+
+変更を反映する
+
+```
+source /etc/profile
+```
